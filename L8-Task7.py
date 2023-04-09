@@ -1,4 +1,4 @@
-class my_complex:
+class ComplexNumber:
     def __init__(self, a, b):
         self.a = a
         self.b = b
@@ -11,5 +11,5 @@ class my_complex:
         return f"({self.a * other.a}, {self.b * other.b})"
 
 
-print(f"Сумма (3, 7) и (2, 5) равна {my_complex(3, 7) + my_complex(2, 5)}")
-print(f"Произведение (3, 7) и (2, 5) равна {my_complex(3, 7) * my_complex(2, 5)}")
+print(f"Сумма (3, 7) и (2, 5) равна {ComplexNumber(3, 7) + ComplexNumber(2, 5)}")
+print(f"Произведение (3, 7) и (2, 5) равна {ComplexNumber(3, 7) * ComplexNumber(2, 5)}")

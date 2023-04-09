@@ -1,4 +1,4 @@
-class my_date:
+class DataStyle:
     def __init__(self, v_date):
         self.v_date = v_date
         self.day, self.month, self.year = map(int, v_date.split('-'))
@@ -10,7 +10,7 @@ class my_date:
 
     @staticmethod
     def validate(v_date):
-        date = my_date(v_date)
+        date = DataStyle(v_date)
         if date.month in range(1, 12):
             return f"прошла успешно"
         else:
@@ -18,6 +18,6 @@ class my_date:
 
 
 var_date = '22-16-1983'
-real_date = my_date(var_date)
+real_date = DataStyle(var_date)
 print(f"Проверка месяца даты: {real_date.validate(var_date)}")
 print(f"Дата преобразована в числа {real_date.extract(var_date)}")
